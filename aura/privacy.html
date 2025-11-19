@@ -1,0 +1,277 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Privacy Policy - Aura Battery Monitor</title>
+      <style>
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+          }
+
+          body {
+              font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+              line-height: 1.7;
+              color: #1d1d1f;
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              min-height: 100vh;
+              padding: 20px;
+          }
+
+          .container {
+              max-width: 800px;
+              margin: 0 auto;
+              background: white;
+              border-radius: 20px;
+              padding: 50px;
+              box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+          }
+
+          .header {
+              border-bottom: 2px solid #f0f0f0;
+              padding-bottom: 20px;
+              margin-bottom: 30px;
+          }
+
+          h1 {
+              font-size: 36px;
+              color: #1d1d1f;
+              margin-bottom: 10px;
+              font-weight: 700;
+          }
+
+          .app-name {
+              color: #8B5CF6;
+              font-weight: 600;
+              font-size: 18px;
+              margin-bottom: 8px;
+          }
+
+          .last-updated {
+              color: #86868b;
+              font-size: 14px;
+          }
+
+          h2 {
+              font-size: 24px;
+              color: #1d1d1f;
+              margin-top: 40px;
+              margin-bottom: 15px;
+              font-weight: 600;
+          }
+
+          h3 {
+              font-size: 18px;
+              color: #333;
+              margin-top: 25px;
+              margin-bottom: 12px;
+              font-weight: 600;
+          }
+
+          p {
+              margin-bottom: 15px;
+              color: #424245;
+              font-size: 16px;
+          }
+
+          ul {
+              margin-left: 25px;
+              margin-bottom: 15px;
+          }
+
+          li {
+              margin-bottom: 10px;
+              color: #424245;
+              font-size: 16px;
+          }
+
+          code {
+              background: #f5f5f7;
+              padding: 2px 6px;
+              border-radius: 4px;
+              font-family: "SF Mono", Monaco, monospace;
+              font-size: 14px;
+              color: #3B82F6;
+          }
+
+          strong {
+              color: #1d1d1f;
+              font-weight: 600;
+          }
+
+          .highlight {
+              background: linear-gradient(135deg, #667eea15, #764ba215);
+              padding: 20px;
+              border-radius: 12px;
+              margin: 20px 0;
+              border-left: 4px solid #8B5CF6;
+          }
+
+          .back-link {
+              display: inline-block;
+              margin-bottom: 20px;
+              color: #3B82F6;
+              text-decoration: none;
+              font-size: 14px;
+              transition: color 0.3s;
+          }
+
+          .back-link:hover {
+              color: #8B5CF6;
+          }
+
+          .footer {
+              margin-top: 50px;
+              padding-top: 30px;
+              border-top: 2px solid #f0f0f0;
+              text-align: center;
+          }
+
+          .contact {
+              background: #f5f5f7;
+              padding: 20px;
+              border-radius: 12px;
+              margin-top: 30px;
+          }
+
+          .contact h3 {
+              margin-top: 0;
+          }
+
+          a {
+              color: #3B82F6;
+              text-decoration: none;
+              transition: color 0.3s;
+          }
+
+          a:hover {
+              color: #8B5CF6;
+              text-decoration: underline;
+          }
+
+          @media (max-width: 768px) {
+              body {
+                  padding: 10px;
+              }
+
+              .container {
+                  padding: 30px 20px;
+                  border-radius: 12px;
+              }
+
+              h1 {
+                  font-size: 28px;
+              }
+
+              h2 {
+                  font-size: 20px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <a href="../index.html" class="back-link">← Back to All Apps</a>
+
+          <div class="header">
+              <h1>Privacy Policy</h1>
+              <p class="app-name">🔋 Aura - Battery Health Monitor</p>
+              <p class="last-updated">Last Updated: October 16, 2025</p>
+          </div>
+
+          <h2>Introduction</h2>
+          <p>Aura ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our iOS application ("App").</p>
+
+          <h2>Data Collection</h2>
+          <div class="highlight">
+              <p><strong>Aura does NOT collect, transmit, or store any personal data outside your device.</strong></p>
+          </div>
+
+          <p>All battery monitoring and analysis occurs entirely on your device using iOS public APIs:</p>
+          <ul>
+              <li><code>UIDevice.current.batteryLevel</code> - Battery level (0-100%)</li>
+              <li><code>UIDevice.current.batteryState</code> - Charging state</li>
+              <li><code>ProcessInfo.processInfo.thermalState</code> - Device thermal state</li>
+              <li>Local storage via SwiftData (on-device only)</li>
+          </ul>
+
+          <h2>Data Usage</h2>
+          <p>All data processing happens locally on your device:</p>
+          <ul>
+              <li>Battery level monitoring</li>
+              <li>Charging pattern analysis</li>
+              <li>Historical trend tracking</li>
+              <li>AI-powered recommendations (using Apple Intelligence, processed on-device)</li>
+          </ul>
+          <p><strong>No data is transmitted to external servers.</strong></p>
+
+          <h2>Third-Party Services</h2>
+          <p>Aura does not use any third-party:</p>
+          <ul>
+              <li>Analytics services</li>
+              <li>Advertising networks</li>
+              <li>Data collection SDKs</li>
+              <li>Cloud storage services</li>
+              <li>Tracking technologies</li>
+          </ul>
+
+          <h2>In-App Purchases</h2>
+          <p>When you make an in-app purchase through the App Store:</p>
+          <ul>
+              <li>Payment processing is handled entirely by Apple</li>
+              <li>We receive only anonymized transaction information</li>
+              <li>We do not have access to your payment details</li>
+          </ul>
+
+          <h2>Apple Intelligence</h2>
+          <p>Aura uses Apple Intelligence (Foundation Models) for personalized battery recommendations:</p>
+          <ul>
+              <li>All AI processing occurs on-device</li>
+              <li>No data is sent to external AI services</li>
+              <li>Requires iOS 26+ and compatible hardware</li>
+          </ul>
+
+          <h2>Data Storage</h2>
+          <p>All battery history data is stored locally on your device using SwiftData:</p>
+          <ul>
+              <li>Data is encrypted at rest by iOS</li>
+              <li>Data is never synced to iCloud or external servers</li>
+              <li>You can delete all data by uninstalling the app</li>
+          </ul>
+
+          <h2>Children's Privacy</h2>
+          <p>Aura is suitable for users of all ages (4+). We do not knowingly collect any information from children, as we do not collect any information at all.</p>
+
+          <h2>Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy.</p>
+
+          <h2>Your Rights</h2>
+          <p>Since we do not collect any personal data, there is no personal data to access, modify, or delete. All data stored on your device can be deleted by uninstalling the app.</p>
+
+          <div class="contact">
+              <h3>Contact Us</h3>
+              <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+              <ul>
+                  <li>Email: support@aura-app.com</li>
+                  <li>Website: <a href="https://aura-app.com/support">https://aura-app.com/support</a></li>
+              </ul>
+          </div>
+
+          <h2>Compliance</h2>
+          <p>This Privacy Policy complies with:</p>
+          <ul>
+              <li>Apple App Store Review Guidelines</li>
+              <li>General Data Protection Regulation (GDPR)</li>
+              <li>California Consumer Privacy Act (CCPA)</li>
+          </ul>
+
+          <div class="footer">
+              <div class="highlight">
+                  <p><strong>Summary:</strong> Aura is 100% privacy-focused. We don't collect, transmit, or store any data. Everything happens on your device.</p>
+              </div>
+          </div>
+      </div>
+  </body>
+  </html>
